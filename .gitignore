@@ -1,0 +1,14 @@
+# Segredos
+.env
+
+# Configurações do VS Code e PyCharm
+.vscode/
+.idea/
+
+# ambiente virtual
+.venv/
+
+# Arquivos pesados e cache
+Data/
+__pycache__/
+src/__pycache__/
