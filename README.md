@@ -1,4 +1,4 @@
-# 📊 Análise Epidemiológica de SRAG e Imunização no Brasil com Neo4j:
+# 📊 Análise Epidemiológica de SRAG e Imunização no Brasil com Neo4j
 
 [![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
@@ -31,11 +31,11 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 ---
 
 ## 📐 Estrutura do Grafo (Modelagem):
-
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
 
 
 📂 Estrutura do Repositório:
+
 analise-dados-srag/
 ├── img/
 │   ├── Relações entre comorbidades e sexos.png
@@ -48,10 +48,3 @@ analise-dados-srag/
 ├── .gitignore              # Filtro para ignorar .env, Data/ e .venv/
 ├── banco_grafos.py         # Módulo de conexão e ingestão em lote no Neo4j
 └── teste_conexao.py        # Script para validação da instância Neo4j
-
-## 👩‍💻 Autora:
-Desenvolvido com 💖 por color $\color{hotblue}{\text{Larissa Vitoria}}$.
-
-
-
-
