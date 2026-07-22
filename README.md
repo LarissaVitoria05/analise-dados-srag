@@ -45,18 +45,20 @@ Representação das entidades e relacionamentos mapeados no banco de dados em gr
 ---
 
 ## 📁 Estrutura do Repositório
-``` 
+Organização estrutural do diretório e pastas do projeto
+```text
 analise-dados-srag/
 ├── img/                                  # Visualizações e gráficos gerados
 │   ├── Relações entre comorbidades e sexos.png
 │   └── Visualização das 25 comorbidades mais presentes...png
 │
 ├── src/                                  # Scripts do pipeline de dados
-│   ├── limpeza.py                        # Tratamento dos dados tabulares
-│   ├── visualizacao.py                   # Geração dos gráficos
+│   ├── limpeza.py                        # Tratamento e higienização dos dados tabulares
+│   ├── visualizacao.py                   # Geração dos gráficos estatísticos
 │   └── main.py                           # Execução do pipeline
 │
 ├── .env.exemplo                          # Template para variáveis de ambiente
-├── .gitignore                            # Filtro de arquivos sensíveis e pesados
+├── .gitignore                            # Filtro para ignorar arquivos sensíveis e pesados
 ├── banco_grafos.py                       # Conexão e ingestão em lote no Neo4j
 └── teste_conexao.py                      # Validação da instância do Neo4j
+```text
