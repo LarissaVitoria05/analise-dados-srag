@@ -32,7 +32,8 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 
 ## 📐 Estrutura do Grafo (Modelagem)
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
-```
+
+---
 
 📂 Estrutura do Repositório
 analise-dados-srag/
@@ -47,7 +48,8 @@ analise-dados-srag/
 ├── .gitignore              # Filtro para ignorar .env, Data/ e .venv/
 ├── banco_grafos.py         # Módulo de conexão e ingestão em lote no Neo4j
 └── teste_conexao.py        # Script para validação da instância Neo4j
-```
+
+---
 
 Desenvolvido por $\color{#1E90FF}{\text{Larissa}}\ \color{#1E90FF}{\text{Vitória}}$
 
