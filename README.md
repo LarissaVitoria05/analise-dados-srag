@@ -20,13 +20,13 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 
 ## 🛠️ Tecnologias e Ferramentas
 
-| Categoria | Tecnologia | Uso |
-| :--- | :--- | :--- |
-| **Linguagem** | Python | Processamento e pipeline de ingestão de dados |
-| **Manipulação de Dados** | Pandas | Limpeza, filtragem e padronização |
+| Categoria | Tecnologia     | Uso |
+| :--- |:---------------| :--- |
+| **Linguagem** | Python         | Processamento e pipeline de ingestão de dados |
+| **Manipulação de Dados** | Pandas         | Limpeza, filtragem e padronização |
 | **Banco de Dados** | Neo4j (Cypher) | Armazenamento e modelagem do grafo epidemiológico |
-| **Segurança/DevOps** | Dotenv / Os.getenv | Gestão de credenciais sem exposição de segredos |
-| **Versionamento** | Git & GitHub | Controle de versão seguro com `.gitignore` customizado |
+| **Segurança/DevOps** | Os.getenv      | Gestão de credenciais sem exposição de segredos |
+| **Versionamento** | Git & GitHub   | Controle de versão seguro com `.gitignore` customizado |
 
 ---
 
