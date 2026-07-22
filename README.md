@@ -42,7 +42,6 @@ Representação das entidades e relacionamentos mapeados no banco de dados em gr
 ---
 
 
----
 
 ## 📁 Estrutura do Repositório
 
