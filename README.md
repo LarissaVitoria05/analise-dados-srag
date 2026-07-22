@@ -38,14 +38,17 @@ Representação das entidades e relacionamentos mapeados no banco de dados em gr
 
 ```text
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
-
+```text
 ---
+
 
 
 ---
 
 ## 📁 Estrutura do Repositório
-Organização estrutural do diretório e pastas do projeto
+
+Organização estrutural do diretório e pastas do projeto:
+
 ```text
 analise-dados-srag/
 ├── img/                                  # Visualizações e gráficos gerados
