@@ -38,9 +38,8 @@ Representação das entidades e relacionamentos mapeados no banco de dados em gr
 
 ```text
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
-```text
+```
 ---
-
 
 
 ---
@@ -64,4 +63,4 @@ analise-dados-srag/
 ├── .gitignore                            # Filtro para ignorar arquivos sensíveis e pesados
 ├── banco_grafos.py                       # Conexão e ingestão em lote no Neo4j
 └── teste_conexao.py                      # Validação da instância do Neo4j
-```text
+```
