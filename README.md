@@ -39,9 +39,12 @@ Representação das entidades e relacionamentos mapeados no banco de dados em gr
 ```text
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
 
+---
 
+
+---
+```
 ## 📁 Estrutura do Repositório
-
 analise-dados-srag/
 ├── img/                                  # Visualizações e gráficos gerados
 │   ├── Relações entre comorbidades e sexos.png
