@@ -17,11 +17,11 @@ class BancoDadosGrafo:
 
     def inserir_pacientes(self, df):
         """
-        Cria os nós de Paciente e Cidade e o relacionamento RESIDE_EM usando lote (UNWIND).
+        cria os nós de Paciente e Cidade e o relacionamento RESIDE_EM usando lote (UNWIND).
         """
         print(f"⚡ Injetando {len(df)} pacientes e cidades no Neo4j...")
         
-        # Converte o DataFrame para uma lista de dicionários nativos do Python
+        # converte o DataFrame para uma lista de dicionários nativos do Python
         dados_pacientes = []
         for _, row in df.iterrows():
             cidade = str(row['ID_MUNICIP']).strip().upper() if pd.notna(row['ID_MUNICIP']) else "NÃO INFORMADO"
@@ -47,7 +47,7 @@ class BancoDadosGrafo:
 
     def inserir_comorbidades_detalhadas(self, df):
         """
-        Cria os nós de Comorbidade e vincula aos pacientes existentes em lote (UNWIND).
+        cria os nós de Comorbidade e vincula aos pacientes existentes em lote!! (UNWIND).
         """
         print("🧬 Processando vínculos de comorbidades (MORB_DESC)...")
 
