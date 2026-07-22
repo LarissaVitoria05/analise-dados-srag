@@ -30,26 +30,29 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 
 ---
 
-## 📐 Estrutura do Grafo (Modelagem)
+---
+
+## 📐 Modelagem em Grafos (Neo4j)
+
+Representação das entidades e relacionamentos mapeados no banco de dados em grafos:
+
+```text
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
 
----
 
-📂 Estrutura do Repositório
+## 📁 Estrutura do Repositório
+
 analise-dados-srag/
-├── img/
+├── img/                                  # Visualizações e gráficos gerados
 │   ├── Relações entre comorbidades e sexos.png
-│   └── Visualização das 25 comorbidades mais presentes entre os notificados.png
-├── src/
-│   ├── limpeza.py          # Tratamento básico dos dados tabulares
-│   ├── visualizacao.py     # Geração de gráficos explicativos
-│   └── main.py             # Execução principal do pipeline
-├── .env.exemplo            # Modelo seguro para variáveis de ambiente
-├── .gitignore              # Filtro para ignorar .env, Data/ e .venv/
-├── banco_grafos.py         # Módulo de conexão e ingestão em lote no Neo4j
-└── teste_conexao.py        # Script para validação da instância Neo4j
-
----
-
-Desenvolvido por $\color{#1E90FF}{\text{Larissa}}\ \color{#1E90FF}{\text{Vitória}}$
-
+│   └── Visualização das 25 comorbidades mais presentes...png
+│
+├── src/                                  # Scripts do pipeline de dados
+│   ├── limpeza.py                        # Tratamento dos dados tabulares
+│   ├── visualizacao.py                   # Geração dos gráficos
+│   └── main.py                           # Execução do pipeline
+│
+├── .env.exemplo                          # Template para variáveis de ambiente
+├── .gitignore                            # Filtro de arquivos sensíveis e pesados
+├── banco_grafos.py                       # Conexão e ingestão em lote no Neo4j
+└── teste_conexao.py                      # Validação da instância do Neo4j
