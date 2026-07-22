@@ -30,7 +30,7 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 
 ---
 
----
+
 
 ## 📐 Modelagem em Grafos (Neo4j)
 
