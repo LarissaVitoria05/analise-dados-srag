@@ -52,4 +52,4 @@ analise-dados-srag/
 
 
 ## 👩‍💻 Autora
-![Autora](https://img.shields.io/badge/Autora-Larissa%20Vitória-0077B5?style=for-the-badge)
+Desenvolvido por $\color{#1E90FF}{\text{Larissa}}\ \color{#1E90FF}{\text{Vitória}}$
