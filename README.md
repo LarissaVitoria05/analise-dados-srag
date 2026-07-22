@@ -31,8 +31,6 @@ Projeto de pipeline e análise de dados focado no mapeamento de casos de **Sínd
 ---
 
 ## 📐 Estrutura do Grafo (Modelagem)
-
-```text
 (Cidade {nome}) <--[:RESIDE_EM]-- (Paciente {id, idade, sexo}) --[:POSSUI_COMORBIDADE]-> (Comorbidade {nome})
 ```
 
