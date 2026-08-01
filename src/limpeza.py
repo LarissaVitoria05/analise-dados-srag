@@ -1,5 +1,20 @@
+from pathlib import Path
 import pandas as pd
 
+# Monta o caminho correto até a pasta Data
+BASE_DIR = Path(__file__).resolve().parent.parent
+caminho_excel = BASE_DIR / "Data" / "srag_total.xlsx"
+
+# Carrega o Excel da pasta Data
+df = pd.read_excel(caminho_excel, engine="openpyxl")
+
+# Exibe as 5 primeiras linhas e informações das colunas
+print(df.head())
+print(df.info())
+
+# Exibe as 5 primeiras linhas e informações das colunas
+print(df.head())
+print(df.info())
 
 def processar_dados_pe(caminho_csv):
     # lendo apenas as colunas que realmente importam para economizar RAM
