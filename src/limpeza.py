@@ -1,18 +1,18 @@
 from pathlib import Path
 import pandas as pd
 
-# Monta o caminho correto até a pasta Data
+# monta o caminho correto até a pasta Data
 BASE_DIR = Path(__file__).resolve().parent.parent
 caminho_excel = BASE_DIR / "Data" / "srag_total.xlsx"
 
-# Carrega o Excel da pasta Data
+# carrega o Excel da pasta Data
 df = pd.read_excel(caminho_excel, engine="openpyxl")
 
-# Exibe as 5 primeiras linhas e informações das colunas
+# exibe as 5 primeiras linhas e informações das colunas
 print(df.head())
 print(df.info())
 
-# Exibe as 5 primeiras linhas e informações das colunas
+# exibe as 5 primeiras linhas e informações das colunas
 print(df.head())
 print(df.info())
 
