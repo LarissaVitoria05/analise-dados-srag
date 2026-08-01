@@ -1,10 +1,9 @@
 # 📊 Análise Epidemiológica de SRAG e Imunização no Brasil com Neo4j
 
-[![Python](https://img.shields.io/badge/Python-3.14-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-2.0+-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![Neo4j](https://img.shields.io/badge/Neo4j-Graph%20Database-008CC1?style=flat&logo=neo4j&logoColor=white)](https://neo4j.com/)
-[![Git](https://img.shields.io/badge/Git-Security%20First-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
-
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 Projeto de pipeline e análise de dados focado no mapeamento de casos de **Síndrome Respiratória Aguda Grave (SRAG)**, identificação de perfis de comorbidades e relacionamentos geográficos entre pacientes e municípios brasileiros utilizando bancos de dados em grafos.
 
 ---
