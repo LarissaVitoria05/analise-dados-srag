@@ -1,11 +1,11 @@
 from pathlib import Path
 import pandas as pd
 
-# 1. o caminho do arquivo xlsx
+#  o caminho do arquivo xlsx
 BASE_DIR = Path(__file__).resolve().parent.parent
 caminho_excel = BASE_DIR / "Data" / "srag_total.xlsx"
 
-# 2. definindo as colunas foco do projeto
+#  definindo as colunas foco do projeto
 colunas_foco = [
     "uf *** contém br - cuidado ***",
     "municipio",
@@ -14,21 +14,21 @@ colunas_foco = [
     "obitos"
 ]
 
-# 2. o lambda lê as planilhas do excel e transforma tudo em minúsculo
+#  o lambda lê as planilhas do excel e transforma tudo em minúsculo
 df = pd.read_excel(
     caminho_excel,
     engine="openpyxl",
     usecols=lambda col: str(col).strip().lower() in colunas_foco
 )
 
-# 4. normalizando os nomes em minúsculo
+#  normalizando os nomes em minúsculo
 df.columns = df.columns.str.strip().str.lower()
 
-# 5. filtrando apenas os registros em Pernambuco (PE)
+#  filtrando apenas os registros em Pernambuco (PE)
 coluna_uf = "uf *** contém br - cuidado ***"
 df_pe = df[df[coluna_uf] == "PE"].copy()
 
-# 6. removendo a coluna de UF, ficando só apenas PE
+# removendo a coluna de UF, ficando só apenas PE
 df_pe = df_pe.drop(columns=[coluna_uf])
 
 # --- resultados ---
@@ -37,7 +37,7 @@ print(df_pe.head())
 
 print(f"\nTotal de registros em PE: {len(df_pe)}")
 print(f"Total de casos em PE: {df_pe['casos'].sum()}")
-print(f"Total de óbitos em PE: {df_pe['obitos'].sum()}") #deixando como obitos sem acento pois no arquivo está sem
+print(f"Total de óbitos em PE: {df_pe['obitos'].sum()}") #deixando obitos sem acento pois no arquivo está sem
 
 def processar_dados_pe(caminho_csv):
     # lendo apenas as colunas que realmente importam para economizar RAM
