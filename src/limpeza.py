@@ -1,20 +1,43 @@
 from pathlib import Path
 import pandas as pd
 
-# monta o caminho correto até a pasta Data
+# 1. Caminho do arquivo
 BASE_DIR = Path(__file__).resolve().parent.parent
 caminho_excel = BASE_DIR / "Data" / "srag_total.xlsx"
 
-# carrega o Excel da pasta Data
-df = pd.read_excel(caminho_excel, engine="openpyxl")
+# 2. Define apenas as colunas que você vai usar no projeto
+colunas_foco = [
+    "uf *** contém br - cuidado ***",
+    "municipio",
+    "faixa etária",
+    "casos",
+    "obitos"
+]
 
-# exibe as 5 primeiras linhas e informações das colunas
-print(df.head())
-print(df.info())
+# 2. O lambda compara os nomes da planilha convertidos para minúsculo na hora da leitura
+df = pd.read_excel(
+    caminho_excel,
+    engine="openpyxl",
+    usecols=lambda col: str(col).strip().lower() in colunas_foco
+)
 
-# exibe as 5 primeiras linhas e informações das colunas
-print(df.head())
-print(df.info())
+# 4. Normaliza os nomes para minúsculo
+df.columns = df.columns.str.strip().str.lower()
+
+# 5. Filtra APENAS os registros de Pernambuco
+coluna_uf = "uf *** contém br - cuidado ***"
+df_pe = df[df[coluna_uf] == "PE"].copy()
+
+# 6. (Opcional) Remove a coluna de UF, já que agora TUDO no df_pe é de Pernambuco
+df_pe = df_pe.drop(columns=[coluna_uf])
+
+# --- RESULTADOS ---
+print("--- DADOS APENAS DE PERNAMBUCO ---")
+print(df_pe.head())
+
+print(f"\nTotal de registros em PE: {len(df_pe)}")
+print(f"Total de casos em PE: {df_pe['casos'].sum()}")
+print(f"Total de óbitos em PE: {df_pe['obitos'].sum()}")
 
 def processar_dados_pe(caminho_csv):
     # lendo apenas as colunas que realmente importam para economizar RAM
