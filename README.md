@@ -5,7 +5,7 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://neo4j.com/)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
-Projeto de pipeline e análise de dados focado no mapeamento de casos de **Síndrome Respiratória Aguda Grave (SRAG)**, identificação de perfis de comorbidades e relacionamentos geográficos entre pacientes e municípios brasileiros utilizando bancos de dados em grafos.
+Projeto de pipeline e análise de dados focado no mapeamento de casos de **Síndrome Respiratória Aguda Grave (SRAG)**, identificação de perfis de comorbidades e relacionamentos geográficos entre pacientes e municípios Pernambucanos utilizando bancos de dados em grafos.
 
 ---
 
