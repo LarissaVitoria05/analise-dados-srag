@@ -1,10 +1,5 @@
 from neo4j import GraphDatabase
 
-#dados do banco NEO4J
-URI = "neo4j://127.0.0.1:7687"
-USER = "Aqui coloque o seu usuário"
-PASSWORD = "COLOQUE_SUA_SENHA_AQUI"
-
 
 def testar_ponte():
     try:
